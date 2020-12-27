@@ -11,6 +11,8 @@ Project files from my Intel® Edge AI for IoT Developers Nanodegree project: Dep
 
 The people counter application demonstrates how to create a smart video IoT solution using Intel® hardware and software tools. The app detects people in a designated area, providing the number of people in the frame, average duration of people in frame, and total count. It then sends the data to a webserver using the Paho MQTT Python package and streams the video to an FFmpeg server.
 
+In order to compare the performance of models before and after conversion, there is also a Python script based on TensorFlow API 1.14 that computes the inference time and output confidence for every frame in the input video file.
+
 ![architectural diagram](./images/arch_diagram.png)
 
 ## Requirements
@@ -156,4 +158,11 @@ You can change each of these as follows:
 CAMERA_FEED_SERVER: "http://localhost:3004"
 ...
 MQTT_SERVER: "ws://localhost:3002"
+```
+
+## Comparing the performance of a TF model before conversion
+
+Open new terminal and run the below command. The model path is hardcoded.
+```
+python tf-test.py
 ```
