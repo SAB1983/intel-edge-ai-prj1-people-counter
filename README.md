@@ -62,6 +62,10 @@ From the main directory:
   cd ../ui
   npm install
 
+## Models
+
+To download and convert the models see the [WRITEUP](./WRITEUP.md).
+
 ## Run the application
 
 From the main directory:
@@ -160,7 +164,7 @@ CAMERA_FEED_SERVER: "http://localhost:3004"
 MQTT_SERVER: "ws://localhost:3002"
 ```
 
-## Comparing the performance of a TF model before conversion
+## Analyze the performance of a TF model before conversion
 
 Open new terminal and run the below command. The model path is hardcoded.
 ```
